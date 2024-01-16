@@ -1,10 +1,12 @@
 import classes from "./orderItemBtnDelete.module.css";
-import { TiDeleteOutline } from "react-icons/ti";
+import { BsTrash } from "react-icons/bs";
 
 export const OrderItemBtnDelete = () => {
   return (
-    <button className={classes.orderItemBtnDelete}>
-      <TiDeleteOutline />
-    </button>
+    <div>
+      <button className={classes.orderItemBtnDelete}>
+        <BsTrash size={'20px'} color="gray"/>
+      </button>
+    </div>
   );
 };
