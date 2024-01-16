@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  margin-top: 59px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-top: 25px;
+  }
+}

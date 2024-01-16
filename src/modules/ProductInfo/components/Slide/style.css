@@ -1,0 +1,43 @@
+.custom-carousel .carousel-inner {
+  border-radius: 8px;
+}
+
+[data-rmiz-ghost] {
+  display: none !important;
+}
+
+.MultiCarousel {
+  margin-top: 15px;
+}
+
+.MultiCarousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+}
+
+.react-multiple-carousel__arrow {
+  min-width: 16px !important;
+  max-width: 16px !important;
+  min-height: 100% !important;
+
+  z-index: 2 !important;
+
+  background: var(--main-background-btn) !important;
+}
+
+.react-multiple-carousel__arrow:hover {
+  background: var(--main-background-btn-hover) !important;
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 10px !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: 0 !important;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 0 !important;
+}

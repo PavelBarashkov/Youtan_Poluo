@@ -1,0 +1,27 @@
+.container {
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 8px;
+}
+
+.header_info {
+    margin-bottom: 30px;
+}
+
+.header_info_text {
+    text-align: center;
+}
+
+.main_info_titile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 6px;
+
+    border-radius: 8px;
+    background-color:#F6F6F6;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+

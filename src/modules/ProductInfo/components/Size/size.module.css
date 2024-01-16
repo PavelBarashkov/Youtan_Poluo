@@ -1,0 +1,49 @@
+.sizes {
+  text-align: start;
+  width: 200px;
+
+  padding: 4px;
+
+  color: black;
+
+  border-radius: 4px;
+  background: #ffff;
+  border-color: lightgray;
+
+  cursor: pointer;
+
+  --bs-btn-active-bg: #ffff;
+  --bs-btn-active-border-color: rgb(80 100 68 / 79%);
+  --bs-btn-active-color: black;
+}
+
+.sizes::after {
+  position: absolute;
+  top: 15px;
+  left: 10.9em;
+}
+
+.sizes:hover {
+  color: black;
+  background: #ffff;
+
+  border-color: rgb(80 100 68 / 79%);
+}
+
+.menu {
+  width: 200px;
+}
+
+.menu_item {
+  font-size: 14px;
+}
+
+.menu_item:hover {
+  font-size: 14px;
+  color: #ffff;
+  background-color: rgb(149 164 140 / 84%);
+}
+
+.size_item {
+  padding: 8px;
+}

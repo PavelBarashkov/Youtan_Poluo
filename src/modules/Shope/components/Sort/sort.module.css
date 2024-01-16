@@ -1,0 +1,42 @@
+.sort_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.sort_title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.filter_btns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.btn {
+  display: flex;
+  align-items: start;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  background-color: #ffff;
+  color: black;
+  border-radius: 3px !important;
+
+  padding: 5px;
+
+  font-size: 14px;
+  --bs-btn-active-color: #ffff;
+  --bs-btn-active-bg: rgb(149 164 140 / 84%);
+  --bs-btn-active-border-color: 1px solid lightgray;
+}
+
+.btn:hover {
+  background-color: rgb(149 164 140) !important;
+  color: #ffff;
+  transition: 0.3s;
+  border: none;
+  border-bottom: 1px solid lightgray !important;
+}

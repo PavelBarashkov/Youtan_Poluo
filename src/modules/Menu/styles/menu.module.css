@@ -1,0 +1,99 @@
+ .customNavbarMain {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    transition: background-color .2s;
+    background-color: rgba(150, 158, 145, 0.7);
+}
+
+.customNavbar {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    transition: background-color .2s;
+    background-color: rgba(150, 158, 145, 1);
+}
+
+
+.customNavbarMenuOpen {
+    position: absolute;
+    z-index: 999;
+    top:0;
+    width: 100%;
+    background-color: rgba(150, 158, 145, 1);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+
+.customNav{
+    font-size: 18px;
+    align-items: center;
+    column-gap: 30px;
+    --bs-navbar-color: rgba(255, 255, 255);
+
+}
+.customNavLink:hover::after{
+    content: "";
+
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: -2px;
+
+
+    display: block;
+    height: 3px;
+    background-color: #C4C4C4;
+    border-radius: 50px;
+}
+
+.customNavLink {
+    color: #ffff;
+    position: relative;
+    text-decoration: none;
+}
+
+.customNavLink_active {
+    font-weight: 400;
+    position: relative;
+}
+
+
+.customNavLink_active::after{
+    content: "";
+
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    bottom: -2px;
+
+    display: block;
+    height: 3px;
+    background-color: #C4C4C4;
+    border-radius: 50px;
+}
+
+.customContainerNav {
+    display: flex;
+    align-items: center;
+    row-gap: 15px;
+    height: 100vh;
+    margin-top: 20px;
+}
+
+@media (max-width: 540px) {
+    .customNavbarMain {
+        position: absolute;
+        top: 0;
+        background-color: rgba(150, 158, 145, 1);
+
+    }
+    .customNavbarMenuOpen {
+        position: absolute;
+        top: 0;
+    }
+}

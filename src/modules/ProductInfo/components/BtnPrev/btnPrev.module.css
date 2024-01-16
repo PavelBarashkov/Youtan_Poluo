@@ -1,0 +1,19 @@
+.btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: initial;
+    color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    color: #ffff;
+    background-color: rgba(150, 158, 145, 1);
+    transition: .3s;
+    cursor: pointer;
+}

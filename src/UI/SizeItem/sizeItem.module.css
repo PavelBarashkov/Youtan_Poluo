@@ -1,0 +1,9 @@
+.size_item {
+    min-width: 40px;
+    padding: 1px 10px;
+
+    font-size: 14px;
+    text-align: center;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+}

@@ -1,0 +1,35 @@
+.carousel {
+    width: 100%;
+}
+
+.carousel_image {
+    /* height: 100vh; */
+    width: 100%;
+
+}
+
+.img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.item {
+    max-height: 100vh;
+}
+.carousel-indicators {
+    z-index: 1;
+}
+
+@media (max-width: 540px) {
+    .img {
+        margin-top: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .caption {
+        font-size: 10px;
+        padding-bottom: 0;
+        bottom: 0.25rem;
+    }
+}

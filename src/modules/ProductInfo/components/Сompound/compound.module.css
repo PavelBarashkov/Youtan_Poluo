@@ -1,0 +1,4 @@
+.compound {
+  display: flex;
+  flex-direction: column;
+}
