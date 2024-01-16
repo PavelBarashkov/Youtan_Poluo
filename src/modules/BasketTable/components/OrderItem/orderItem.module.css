@@ -4,3 +4,10 @@
 
   width: 100%;
 }
+
+.orderItemBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}

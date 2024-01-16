@@ -14,11 +14,13 @@ export const OrderItem = () => {
       <OrderItemPreview />
       <OrderItemBody>
         <OrderItemInfo />
-        <OrderItemColor />
-        <OrderItemSize />
-        <OrderItemQuantity />
-        <OrderItemPrice />
-        <OrderItemBtnDelete />
+        <div className={classes.orderItemBody}>
+          <OrderItemColor />
+          <OrderItemSize />
+          <OrderItemQuantity />
+          <OrderItemPrice />
+          <OrderItemBtnDelete />
+        </div>
       </OrderItemBody>
     </div>
   );
