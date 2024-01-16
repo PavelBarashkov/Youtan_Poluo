@@ -1,0 +1,6 @@
+.orderItem {
+  display: flex;
+  column-gap: 10px;
+
+  width: 100%;
+}
