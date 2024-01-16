@@ -1,9 +1,12 @@
 .orderItemSize {
-    display:inline-block;
+    align-items: center;
+    display: flex;
+    
     width: 100px;
+    height: 42px;
     padding: 12px 11px;
 
     border: 1px solid rgba(79, 62, 53, 0.12);
 
-    font-size: 12px;
+    font-size: 14px;
 }
