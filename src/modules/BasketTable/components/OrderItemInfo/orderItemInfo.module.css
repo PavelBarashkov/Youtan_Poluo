@@ -1,0 +1,14 @@
+.orderItemInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.orderItemVendorCode {
+  font-size: 10px;
+}
+
+.orderItemTitle {
+  font-size: 12px;
+  max-width: 220px;
+}

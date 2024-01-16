@@ -2,9 +2,9 @@ import classes from "./orderItemInfo.module.css";
 
 export const OrderItemInfo = () => {
   return (
-    <div className="order-item__info">
-          <div className="order-item__vendor-code">артикул</div>
-          <div className="order-item__title">Название</div>
-        </div>
-  )
-}
+    <div className={classes.orderItemInfo}>
+      <div className={classes.orderItemVendorCode}>арт. 164567</div>
+      <div className={classes.orderItemTitle}>Костюмный классический</div>
+    </div>
+  );
+};
