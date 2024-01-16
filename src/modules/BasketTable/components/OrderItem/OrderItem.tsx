@@ -1,5 +1,6 @@
 import { OrderItemBody } from "../OrderItemBody/OrderItemBody";
 import { OrderItemBtnDelete } from "../OrderItemBtnDelete/OrderItemBtnDelete";
+import { OrderItemColor } from "../OrderItemColor/OrderItemColor";
 import { OrderItemInfo } from "../OrderItemInfo/OrderItemInfo";
 import { OrderItemPreview } from "../OrderItemPreview/OrderItemPreview";
 import { OrderItemQuantity } from "../OrderItemQuantity/OrderItemQuantity";
@@ -9,12 +10,13 @@ import classes from "./orderItem.module.css";
 export const OrderItem = () => {
   return (
     <div className={classes.orderItem}>
-      <OrderItemPreview />
+      <OrderItemPreview/>
       <OrderItemBody>
-        <OrderItemInfo />
-        <OrderItemSize />
-        <OrderItemQuantity />
-        <OrderItemBtnDelete />
+        <OrderItemInfo/>
+        <OrderItemColor/>
+        <OrderItemSize/>
+        <OrderItemQuantity/>
+        <OrderItemBtnDelete/>
       </OrderItemBody>
     </div>
   );
