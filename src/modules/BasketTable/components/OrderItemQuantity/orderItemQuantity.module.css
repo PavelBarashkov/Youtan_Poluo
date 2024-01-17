@@ -31,10 +31,10 @@
     background-color: var(--main-background-btn-hover);
 }
 
-/* .orderItemQuantity span{
-    color: red;
-
-        padding: 12px 11px;
-    
-    border: 1px solid rgba(79, 62, 53, 0.12);
-} */
+@media (max-width: 767px) {
+    .orderItemQuantity {
+        width: 55px;
+        height: 25px;
+        padding: 8px 7px;
+    }
+}

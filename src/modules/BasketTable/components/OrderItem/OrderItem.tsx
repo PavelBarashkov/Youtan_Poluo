@@ -1,3 +1,4 @@
+import { Row, Col } from "react-bootstrap";
 import { OrderItemBody } from "../OrderItemBody/OrderItemBody";
 import { OrderItemBtnDelete } from "../OrderItemBtnDelete/OrderItemBtnDelete";
 import { OrderItemColor } from "../OrderItemColor/OrderItemColor";
@@ -10,18 +11,24 @@ import classes from "./orderItem.module.css";
 
 export const OrderItem = () => {
   return (
-    <div className={classes.orderItem}>
-      <OrderItemPreview />
-      <OrderItemBody>
-        <OrderItemInfo />
-        <div className={classes.orderItemBody}>
-          <OrderItemColor />
-          <OrderItemSize />
-          <OrderItemQuantity />
-          <OrderItemPrice />
-          <OrderItemBtnDelete />
+    <Row className={`g-2 ${classes.orderItem}`}>
+      <Col xl={2}  md={3} sm={12}>
+        <div className={classes.orderItemContainerInfo}>
+          <OrderItemPreview />
+          <OrderItemInfo />
         </div>
-      </OrderItemBody>
-    </div>
+      </Col>
+      <Col xl={9}  md={8} sm={12}>
+        <OrderItemBody>
+          <div className={classes.orderItemBody}>
+            <OrderItemColor />
+            <OrderItemSize />
+            <OrderItemQuantity />
+            <OrderItemPrice />
+            <OrderItemBtnDelete />
+          </div>
+        </OrderItemBody>
+      </Col>
+    </Row>
   );
 };

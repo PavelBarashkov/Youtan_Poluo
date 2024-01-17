@@ -10,3 +10,11 @@
 
     font-size: 14px;
 }
+
+@media (max-width: 767px) {
+    .orderItemSize {
+        width: 55px;
+        height: 25px;
+        padding: 8px 7px;
+    }
+}
