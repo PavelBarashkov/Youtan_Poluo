@@ -9,7 +9,11 @@ export const NavGroupSecond = () => {
     <Nav className={`mo-auto ${classes.customNav}`}>
       <NavLinkCustom title={"Доставка и оплата"} toPage={MAIN_ROUTE} />
       <NavLinkCustom title={"FAQ"} toPage={MAIN_ROUTE} toId={"FAQ"} />
-      <NavLinkCustom title={<IconBasket />} toPage={BASKET_ROUTE} />
+      <NavLinkCustom
+        isActive={true}
+        title={<IconBasket />}
+        toPage={BASKET_ROUTE}
+      />
     </Nav>
   );
 };

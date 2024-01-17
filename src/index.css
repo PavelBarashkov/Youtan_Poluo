@@ -1,24 +1,23 @@
 #root {
-    height: 100%;
-    --main-background-btn: rgb(80 100 68 / 50%);
-    --main-background-btn-hover: rgb(80 100 68 / 79%);
+  height: 100%;
+  --main-background-btn: rgb(80 100 68 / 50%);
+  --main-background-btn-hover: rgb(80 100 68 / 79%);
 }
 
-
-
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

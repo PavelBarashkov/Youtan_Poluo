@@ -41,7 +41,7 @@ export const Menu = () => {
   };
 
   const handlerBntLogo = () => {
-    toggleMenu();
+    navigate(MAIN_ROUTE);
   };
 
   if (sizeWindow < 1200) {
