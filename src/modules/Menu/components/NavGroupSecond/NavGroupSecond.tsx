@@ -11,7 +11,7 @@ export const NavGroupSecond = () => {
       <NavLinkCustom title={"FAQ"} toPage={MAIN_ROUTE} toId={"FAQ"} />
       <NavLinkCustom
         isActive={true}
-        title={<IconBasket />}
+        title={<><IconBasket /><div className={classes.count}>5</div></>}
         toPage={BASKET_ROUTE}
       />
     </Nav>

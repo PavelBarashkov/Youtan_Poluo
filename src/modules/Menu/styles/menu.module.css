@@ -107,3 +107,20 @@
     top: 0;
   }
 }
+
+
+.count {
+  position: absolute;
+  z-index: 9999;
+  top: -5px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  font-size: 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+}

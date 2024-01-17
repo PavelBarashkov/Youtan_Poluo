@@ -122,6 +122,7 @@ export const Menu = () => {
                     toggleMenu();
                   }}
                 >
+                  <div className={classes.count}>5</div>
                   <IconBasket />
                 </NavLink>
               </Nav>
