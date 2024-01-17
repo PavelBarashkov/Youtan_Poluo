@@ -8,7 +8,7 @@ import "./CardItem.css";
 import { useNavigate } from "react-router-dom";
 import { PRODUCT_ROUTE } from "../../routes/consts";
 import { CarouselListImg } from "../CarouselListImg/CarouselListImg";
-import { formatPrice } from "../../modules/ProductInfo/helpers/formatPrice";
+import { formatPrice } from "../../helpers/formatPrice";
 
 export const CardItem = ({ card }: any) => {
   const sizes = AllSizes(card.sizes);

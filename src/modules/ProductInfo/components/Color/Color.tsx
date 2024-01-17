@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
 import { useAppDispatch } from "../../../../app/hooks";
-import { hexToRgb } from "../../helpers/hexToRgb";
 import { IColor } from "../../interface/IColor";
 import classes from "./color.module.css";
 import { setCountPrev, setSelectedColor } from "../../slice/card";
 import { useNavigate } from "react-router-dom";
 import { PRODUCT_ROUTE } from "../../../../routes/consts";
+import { hexToRgb } from "../../../../helpers/hexToRgb";
 
 interface IColorProps {
   colors: IColor[];

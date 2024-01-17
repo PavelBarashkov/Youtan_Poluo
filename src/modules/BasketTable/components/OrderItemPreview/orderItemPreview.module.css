@@ -1,0 +1,8 @@
+.orderItemPreview {
+    width: 77px;
+}
+
+.orderItemPreviewImg {
+    width: 77px;
+    object-fit: contain;
+}

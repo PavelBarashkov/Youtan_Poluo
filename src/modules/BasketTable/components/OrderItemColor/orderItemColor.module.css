@@ -1,0 +1,15 @@
+.orderItemColor {
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50px;
+}
+
+@media (max-width: 767px) {
+  .orderItemColor {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50px;
+  }
+}

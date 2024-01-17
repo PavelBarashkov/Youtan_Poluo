@@ -1,0 +1,40 @@
+.orderItemQuantityContainer {
+    text-align: center;
+    
+}
+
+.orderItemQuantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: 100px;
+    height: 42px;
+
+    font-size: 14px;
+    
+    border: 1px solid rgba(79, 62, 53, 0.12);
+}
+
+.orderItemQuantityBtn {
+    width: 25px;
+    height: 42px;
+    border: none;
+    border-radius: 2px;
+    background-color: inherit;
+
+
+}
+
+.orderItemQuantityBtn:hover {
+    color: #ffff;
+    background-color: var(--main-background-btn-hover);
+}
+
+@media (max-width: 767px) {
+    .orderItemQuantity {
+        width: 55px;
+        height: 25px;
+        padding: 8px 7px;
+    }
+}
