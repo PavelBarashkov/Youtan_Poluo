@@ -22,7 +22,7 @@
   font-size: calc(10px + 2vmin);
 }
 
-.content {
+.content-main {
   flex: 1 0 auto;
 }
 .footer {
