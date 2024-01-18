@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { CustomContainer } from "./components/CustomContainer/CustomContainer";
 import { Title } from "./components/Title/Title";
 import { ListCard } from "../../components/ListCard/ListCard";
@@ -15,7 +15,7 @@ export const MainCollection = () => {
   );
 
   useEffect(() => {
-      dispatch(fetchCardFavorite());
+    dispatch(fetchCardFavorite());
   }, []);
 
   return (

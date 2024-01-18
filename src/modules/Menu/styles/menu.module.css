@@ -1,99 +1,126 @@
- .customNavbarMain {
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-    transition: background-color .2s;
-    background-color: rgba(150, 158, 145, 0.7);
+.customNavbarMain {
+  position: absolute;
+  z-index: 999;
+
+  width: 100%;
+
+  transition: background-color 0.2s;
+
+  background-color: rgba(150, 158, 145, 0.7);
 }
 
 .customNavbar {
-    width: 100%;
-    position: absolute;
-    z-index: 999;
-    top: 0;
-    transition: background-color .2s;
-    background-color: rgba(150, 158, 145, 1);
+  position: absolute;
+  z-index: 999;
+  top: 0;
+
+  width: 100%;
+
+  transition: background-color 0.2s;
+
+  background-color: rgba(150, 158, 145, 1);
 }
 
-
 .customNavbarMenuOpen {
-    position: absolute;
-    z-index: 999;
-    top:0;
-    width: 100%;
-    background-color: rgba(150, 158, 145, 1);
+  position: absolute;
+  z-index: 999;
+  top: 0;
+
+  width: 100%;
+
+  background-color: rgba(150, 158, 145, 1);
 }
 
 .logo {
-    cursor: pointer;
+  cursor: pointer;
 }
 
+.customNav {
+  align-items: center;
+  column-gap: 30px;
 
-.customNav{
-    font-size: 18px;
-    align-items: center;
-    column-gap: 30px;
-    --bs-navbar-color: rgba(255, 255, 255);
+  font-size: 18px;
 
+  --bs-navbar-color: rgba(255, 255, 255);
 }
-.customNavLink:hover::after{
-    content: "";
+.customNavLink:hover::after {
+  content: "";
 
-    position: absolute;
-    left: 4px;
-    right: 4px;
-    bottom: -2px;
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: -2px;
 
-
-    display: block;
-    height: 3px;
-    background-color: #C4C4C4;
-    border-radius: 50px;
+  display: block;
+  height: 3px;
+  background-color: #c4c4c4;
+  border-radius: 50px;
 }
 
 .customNavLink {
-    color: #ffff;
-    position: relative;
-    text-decoration: none;
+  position: relative;
+  color: #ffff;
+
+  text-decoration: none;
 }
 
 .customNavLink_active {
-    font-weight: 400;
-    position: relative;
+  position: relative;
+
+  color: #ffff;
+  font-weight: 400;
+  text-decoration: none;
 }
 
+.customNavLink_active::after {
+  content: "";
 
-.customNavLink_active::after{
-    content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: -2px;
 
-    position: absolute;
-    left: 4px;
-    right: 4px;
-    bottom: -2px;
-
-    display: block;
-    height: 3px;
-    background-color: #C4C4C4;
-    border-radius: 50px;
+  display: block;
+  height: 3px;
+  background-color: #c4c4c4;
+  border-radius: 50px;
 }
 
 .customContainerNav {
-    display: flex;
-    align-items: center;
-    row-gap: 15px;
-    height: 100vh;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  row-gap: 15px;
+
+  height: 100vh;
+  margin-top: 20px;
 }
 
 @media (max-width: 540px) {
-    .customNavbarMain {
-        position: absolute;
-        top: 0;
-        background-color: rgba(150, 158, 145, 1);
+  .customNavbarMain {
+    position: absolute;
+    top: 0;
 
-    }
-    .customNavbarMenuOpen {
-        position: absolute;
-        top: 0;
-    }
+    background-color: rgba(150, 158, 145, 1);
+  }
+  .customNavbarMenuOpen {
+    position: absolute;
+    top: 0;
+  }
+}
+
+
+.count {
+  position: absolute;
+  z-index: 9999;
+  top: -5px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  font-size: 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
 }
