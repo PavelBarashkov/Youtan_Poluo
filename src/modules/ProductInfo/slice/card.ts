@@ -5,7 +5,19 @@ import { IGetCardInfoProps } from "../interface/IGetCardInfoProps";
 import { IColor } from "../interface/IColor";
 
 const initialState: ICardState = {
-  card: [],
+  card: {
+    cardId: 0,
+    color: '#',
+    colors: [],
+    compound: '',
+    description: '',
+    id: 0,
+    images: [],
+    name: '',
+    price: 0,
+    size: [],
+    vendor_code: '',
+  },
   selected: {
     color: {
       modelId: 0,

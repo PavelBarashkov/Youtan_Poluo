@@ -13,20 +13,26 @@ interface IProductType {
 }
 
 interface IBasketType {
-  products: IProductType[];
+  basket: IProductType[];
   menuCountOrder: number;
 }
 
 const initialState: IBasketType = {
-  products: products,
+  basket: products,
   menuCountOrder: products.length,
 };
 
 export const basketSlice = createSlice({
   name: "types",
   initialState,
-  reducers: {},
+  reducers: {
+    addInBasket: (state, action) => {
+      state.menuCountOrder += 1
+      state.basket = [...state.basket, action.payload];
+      localStorage.setItem("basket", JSON.stringify(state.basket));
+    },
+  },
 });
 
-export const {} = basketSlice.actions;
+export const { addInBasket } = basketSlice.actions;
 export default basketSlice.reducer;

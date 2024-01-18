@@ -2,7 +2,7 @@ import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import { cardsSlice } from "../modules/MainCollection";
 import { allCardsSlice, typesSlice } from "../modules/Shope";
 import { cardSlice } from "../modules/ProductInfo";
-import basketSlice from "../sliceAll/basketSlice";
+import { basketSlice } from "../sliceAll/basketSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,7 +10,7 @@ export const store = configureStore({
     allCards: allCardsSlice.reducer,
     types: typesSlice.reducer,
     cardInfo: cardSlice.reducer,
-    basket: basketSlice
+    basket: basketSlice.reducer
   },
 });
 
