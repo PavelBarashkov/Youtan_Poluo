@@ -31,8 +31,11 @@ export const basketSlice = createSlice({
       state.basket = [...state.basket, action.payload];
       localStorage.setItem("basket", JSON.stringify(state.basket));
     },
+    setBasket: (state) => {
+      state.basket = products;
+    }
   },
 });
 
-export const { addInBasket } = basketSlice.actions;
+export const { addInBasket, setBasket } = basketSlice.actions;
 export default basketSlice.reducer;

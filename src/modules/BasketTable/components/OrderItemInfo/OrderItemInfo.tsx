@@ -1,10 +1,15 @@
 import classes from "./orderItemInfo.module.css";
 
-export const OrderItemInfo = () => {
+interface IOrderItemInfoProps {
+  title: string;
+  code: string;
+}
+
+export const OrderItemInfo = ({ title, code }: IOrderItemInfoProps) => {
   return (
     <div className={classes.orderItemInfo}>
-      <div className={classes.orderItemVendorCode}>арт. 164567</div>
-      <div className={classes.orderItemTitle}>Костюмный классический</div>
+      <div className={classes.orderItemVendorCode}>арт. {code}</div>
+      <div className={classes.orderItemTitle}>{title}</div>
     </div>
   );
 };

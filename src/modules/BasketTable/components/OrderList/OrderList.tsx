@@ -1,12 +1,13 @@
 import classes from "./orderList.module.css";
 import { OrderItem } from "../OrderItem/OrderItem";
 
-export const OrderList = () => {
+export const OrderList = ({ list }: any) => {
   return (
     <div className={classes.orderList}>
-      {Array.from({ length: 5 }, (_, index) => (
-        <OrderItem />
-      ))}
+      {list &&
+        list.map((product: any) => (
+          <OrderItem product={product} key={product.modelId} />
+        ))}
     </div>
   );
 };

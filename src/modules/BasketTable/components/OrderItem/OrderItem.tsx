@@ -9,22 +9,22 @@ import { OrderItemQuantity } from "../OrderItemQuantity/OrderItemQuantity";
 import { OrderItemSize } from "../OrderItemSize/OrderItemSize";
 import classes from "./orderItem.module.css";
 
-export const OrderItem = () => {
+export const OrderItem = ({ product }: any) => {
   return (
     <Row className={`g-2 ${classes.orderItem}`}>
-      <Col xl={2}  md={3} sm={12}>
+      <Col xl={2} md={3} sm={12}>
         <div className={classes.orderItemContainerInfo}>
-          <OrderItemPreview />
-          <OrderItemInfo />
+          <OrderItemPreview img={product.img} />
+          <OrderItemInfo title={product.name} code={product.vendor_code} />
         </div>
       </Col>
-      <Col xl={9}  md={8} sm={12}>
+      <Col xl={9} md={8} sm={12}>
         <OrderItemBody>
           <div className={classes.orderItemBody}>
-            <OrderItemColor />
-            <OrderItemSize />
-            <OrderItemQuantity />
-            <OrderItemPrice />
+            <OrderItemColor color={product.color.color} />
+            <OrderItemSize size={product.size.name} />
+            <OrderItemQuantity quantity={product.quantity} />
+            <OrderItemPrice price={product.price}/>
             <OrderItemBtnDelete />
           </div>
         </OrderItemBody>

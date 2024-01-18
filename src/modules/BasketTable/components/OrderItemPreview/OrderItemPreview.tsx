@@ -1,13 +1,20 @@
 import classes from "./orderItemPreview.module.css";
-import photo from "../../коричнеКост1.jpg";
 import { Link } from "react-router-dom";
 
-export const OrderItemPreview = () => {
+interface IOrderItemPreviewProps {
+  img: string;
+}
+
+export const OrderItemPreview = ({ img }: IOrderItemPreviewProps) => {
   return (
     <div className={classes.orderItemPreview}>
-      <Link to={'!#'}>
-        <img className={classes.orderItemPreviewImg} src={photo} alt="" />
+      <Link to={"!#"}>
+        <img
+          className={classes.orderItemPreviewImg}
+          src={img}
+          alt="Youtan Poluo"
+        />
       </Link>
     </div>
-    );
+  );
 };
