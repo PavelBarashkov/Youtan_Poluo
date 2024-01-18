@@ -19,6 +19,7 @@ export const BtnBasket = () => {
       name: selected.size.name,
     },
     color: selected.color,
+    quantity: 1
   };
   return (
     <button

@@ -1,9 +1,13 @@
 import classes from "./orderItemSize.module.css";
 
-export const OrderItemSize = () => {
+interface IOrderItemSizeProps {
+  size: string;
+}
+
+export const OrderItemSize = ({ size }: IOrderItemSizeProps) => {
   return (
     <div className={classes.orderItemSizeContainer}>
-      <div className={classes.orderItemSize}>xs</div>
+      <div className={classes.orderItemSize}>{size}</div>
     </div>
   );
 };
