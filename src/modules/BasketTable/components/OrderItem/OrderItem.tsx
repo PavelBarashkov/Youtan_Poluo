@@ -23,9 +23,9 @@ export const OrderItem = ({ product }: any) => {
           <div className={classes.orderItemBody}>
             <OrderItemColor color={product.color.color} />
             <OrderItemSize size={product.size.name} />
-            <OrderItemQuantity quantity={product.quantity} />
-            <OrderItemPrice price={product.price}/>
-            <OrderItemBtnDelete />
+            <OrderItemQuantity product={product} quantity={product.quantity} />
+            <OrderItemPrice product={product}/>
+            <OrderItemBtnDelete product={product}/>
           </div>
         </OrderItemBody>
       </Col>

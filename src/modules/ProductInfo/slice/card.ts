@@ -7,16 +7,16 @@ import { IColor } from "../interface/IColor";
 const initialState: ICardState = {
   card: {
     cardId: 0,
-    color: '#',
+    color: "#",
     colors: [],
-    compound: '',
-    description: '',
+    compound: "",
+    description: "",
     id: 0,
     images: [],
-    name: '',
+    name: "",
     price: 0,
     size: [],
-    vendor_code: '',
+    vendor_code: "",
   },
   selected: {
     color: {
@@ -26,6 +26,7 @@ const initialState: ICardState = {
     size: {
       id: 0,
       name: "",
+      productId: 0,
     },
   },
   countPrev: 1,
@@ -44,15 +45,15 @@ export const getCardInfo = createAsyncThunk(
 const fun = (obj: any, color: string) => {
   let result: any = {};
   obj.forEach((item: any) => {
-      if ( item.color === color) {
-          result = item;
-      }
-  })
+    if (item.color === color) {
+      result = item;
+    }
+  });
   return {
     modelId: result.modelId,
-    color: result.color
+    color: result.color,
   };
-}
+};
 
 export const cardSlice = createSlice({
   name: "cards",
@@ -65,14 +66,13 @@ export const cardSlice = createSlice({
       state.selected.size = action.payload;
     },
     setCountPrev: (state, action) => {
-      if( action.payload === 'next') {
+      if (action.payload === "next") {
         state.countPrev += 1;
-        console.log(state.countPrev)
-      } 
-      if(action.payload === 'reset') {
+      }
+      if (action.payload === "reset") {
         state.countPrev = 1;
-      } 
-    }
+      }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -82,12 +82,13 @@ export const cardSlice = createSlice({
       })
       .addCase(getCardInfo.fulfilled, (state, action) => {
         state.card = action.payload;
-
         state.selected.color.modelId = action.payload.id;
         // state.selected.color.color = action.payload.color;
-        state.selected.color = fun(action.payload.colors, action.payload.color)
+        state.selected.color = fun(action.payload.colors, action.payload.color);
         state.selected.size.id = action.payload.size[0]?.id;
         state.selected.size.name = action.payload.size[0]?.name;
+        state.selected.size.productId = action.payload.size[0]?.productId;
+
 
         state.loading = false;
         state.error = "";
@@ -104,5 +105,6 @@ export const cardSlice = createSlice({
   },
 });
 
-export const { setSelectedColor, setSelectedSize, setCountPrev } = cardSlice.actions;
+export const { setSelectedColor, setSelectedSize, setCountPrev } =
+  cardSlice.actions;
 export default cardSlice.reducer;

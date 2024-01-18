@@ -17,6 +17,7 @@ export const BtnBasket = () => {
     size: {
       id: selected.size.id,
       name: selected.size.name,
+      productId: selected.size.productId
     },
     color: selected.color,
     quantity: 1

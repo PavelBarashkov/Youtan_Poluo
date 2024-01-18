@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
 import classes from "./orderItemPrice.module.css";
-import { formatPrice } from '../../../../helpers/formatPrice';
+import { formatPrice } from "../../../../helpers/formatPrice";
+import { IProduct } from "../../../../sliceAll/basketSlice";
 
 interface IOrderItemPrice {
-  price: number;
+  product: IProduct;
 }
 
-export const OrderItemPrice = ({price}: IOrderItemPrice) => {
+export const OrderItemPrice = ({ product }: IOrderItemPrice) => {
+  const { price, quantity } = product;
+  const priceOrder = price * quantity
   return (
-    <div className={classes.orderItemPrice}>{formatPrice(price) } &#8381;</div>
-  )
-}
+    <div className={classes.orderItemPrice}>{formatPrice(priceOrder)} &#8381;</div>
+  );
+};
