@@ -3,7 +3,7 @@ import { IColor } from "./IColor";
 import { ISize } from "./ISize";
 
 export interface ICardState {
-    card: ICard[];
+    card: ICard;
     selected: {
       size: ISize
       color: IColor

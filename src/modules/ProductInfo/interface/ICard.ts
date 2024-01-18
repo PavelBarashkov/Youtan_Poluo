@@ -8,7 +8,7 @@ export interface ICard {
     compound: string;
     description: string;
     id: number;
-    img: string[];
+    images: string[];
     name: string;
     price: number;
     size: ISize[];
