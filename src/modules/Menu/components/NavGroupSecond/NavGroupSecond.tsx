@@ -3,8 +3,12 @@ import { Nav } from "react-bootstrap";
 import { NavLinkCustom } from "../NavLinkCustom.tsx/NavLinkCustom";
 import { BASKET_ROUTE, MAIN_ROUTE } from "../../../../routes/consts";
 import { IconBasket } from "../../../../UI/IconBasket/IconBasket";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../../app/store";
 
 export const NavGroupSecond = () => {
+  const { menuCountOrder } = useSelector((state: RootState) => state.basket);
+
   return (
     <Nav className={`mo-auto ${classes.customNav}`}>
       <NavLinkCustom title={"Доставка и оплата"} toPage={MAIN_ROUTE} />
@@ -14,7 +18,9 @@ export const NavGroupSecond = () => {
         title={
           <>
             <IconBasket />
-            <div className={classes.count}>5</div>
+            {menuCountOrder > 0 && (
+              <div className={classes.count}>{menuCountOrder}</div>
+            )}
           </>
         }
         toPage={BASKET_ROUTE}
