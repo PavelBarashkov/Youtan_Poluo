@@ -1,10 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { BasketTable as Table } from "../modules/BasketTable";
+import { Basket as BasketModule } from "../modules/Basket";
+
 export const Basket = () => {
   return (
     <Container style={{ marginTop: 59 }}>
-      <Table />
+      <h3 style={{ textAlign: "center" }}>Корзина</h3>
+      <BasketModule />
+      {/* <Table /> */}
+      {/* <Cdek/> */}
     </Container>
   );
 };

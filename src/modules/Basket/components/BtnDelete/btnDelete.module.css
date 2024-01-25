@@ -1,0 +1,12 @@
+.btnDelete {
+    border: none;
+    background-color: inherit;
+}
+
+.icon:hover {
+    color: red !important;
+}
+
+.icon:active {
+    color: brown !important;
+}
