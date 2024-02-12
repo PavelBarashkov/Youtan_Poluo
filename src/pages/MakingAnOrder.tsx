@@ -1,7 +1,5 @@
-import React from 'react'
+import { MakingAnOrder as ModuleMakingAnOrder } from "../modules/MakingAnOrder";
 
 export const MakingAnOrder = () => {
-  return (
-    <div>MakingAnOrder</div>
-  )
-}
+  return <ModuleMakingAnOrder />;
+};
