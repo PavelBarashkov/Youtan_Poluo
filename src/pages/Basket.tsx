@@ -7,8 +7,6 @@ export const Basket = () => {
     <Container style={{ marginTop: 59 }}>
       <h3 style={{ textAlign: "center" }}>Корзина</h3>
       <BasketModule />
-      {/* <Table /> */}
-      {/* <Cdek/> */}
     </Container>
   );
 };

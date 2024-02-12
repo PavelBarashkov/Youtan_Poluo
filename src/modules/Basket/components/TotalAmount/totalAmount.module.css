@@ -1,0 +1,47 @@
+.TotalAmount {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    padding: 24px 16px;
+
+    background-color: #e3e5e9;
+
+    border-radius: 8px;
+}
+
+.TotalAmountHeader {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.TotalAmountBody {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+}
+
+.TotalAmountBtn {
+    padding: 8px 16px;
+
+    background-color: var(--main-background-btn);
+    color: #ffff;
+
+    border: none;
+    border-radius: 8px;
+}
+
+.TotalAmountBtn:hover {
+    background-color: var(--main-background-btn-hover);
+}
+
+.TotalAmountBtn:active {
+    background-color: var(--main-background-btn-active);
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .TotalAmountBody {
+        font-size: 12px;
+    }
+}
